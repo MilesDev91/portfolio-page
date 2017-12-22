@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-page",
+  "short_name": "portfolio-page",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#673ab8"
+}

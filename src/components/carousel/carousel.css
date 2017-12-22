@@ -1,0 +1,29 @@
+.carousel {
+    min-height: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel1 {
+    background-image: url('../../assets/image/Initial.jpeg');
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+}
+
+.carousel2 {
+    background-image: url('../../assets/image/Second.jpeg');
+}
+
+.carousel p {
+    margin: 0;
+    min-height: inherit;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .carousel1 {
+        background-size: cover;
+    }
+}
