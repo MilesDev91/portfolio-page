@@ -7,7 +7,9 @@ export default class Home extends Component {
 	render () {
 		return (
 			<div class={style.home}>
-				<Carousel />
+				<div class={style.overlay}>
+					<Carousel />
+				</div>
 				<p>hi</p>
 			</div>
 		);

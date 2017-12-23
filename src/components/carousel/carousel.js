@@ -1,10 +1,15 @@
 import { h, Component } from 'preact';
 import classes from './Carousel.css';
+import { Icon } from 'react-fa';
 
 export default class ComponentName extends Component {
 
     state = {
         position: 1
+    }
+
+    positionChangedHandler = () => {
+
     }
 
     render () {
@@ -21,7 +26,13 @@ export default class ComponentName extends Component {
         }
         return (
             <div class={carouselImage.join(' ')}>
-                <p>Hi I am a carousel</p>
+                <div class={classes.overlay}>
+                    <div class={classes.middle}>
+                        <button><Icon name="angle-left" size="3x" /></button>
+                        <p>Hi I am a carousel</p>
+                        <button><Icon name="angle-right" size="3x" /></button>
+                    </div>
+                </div>
             </div>
         );
     }
