@@ -1,6 +1,6 @@
 import preact from 'preact';
 import { Link } from 'preact-router/match';
-import classes from './footer.css';
+import classes from './Footer.css';
 
 const footer = (props) => (
     <div class={classes.footer}>

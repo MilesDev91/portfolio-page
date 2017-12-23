@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import classes from './carousel.css';
+import classes from './Carousel.css';
 
 export default class ComponentName extends Component {
 
@@ -9,7 +9,6 @@ export default class ComponentName extends Component {
 
     render () {
         let carouselImage = [classes.carousel];
-        console.log(carouselImage);
         switch (this.state.position) {
             case 1:
                 carouselImage.push(classes.carousel1);
@@ -20,7 +19,6 @@ export default class ComponentName extends Component {
             default:
                 return null;
         }
-        console.log(carouselImage);
         return (
             <div class={carouselImage.join(' ')}>
                 <p>Hi I am a carousel</p>

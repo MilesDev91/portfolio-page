@@ -1,5 +1,8 @@
 .header {
 	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -21,8 +24,15 @@
 	text-shadow: 1px 2px 2px rgb(61, 61, 61);
 }
 
+.header button {
+	border: none;
+	background-color: transparent;
+	color: white;
+	margin: 0;
+	padding-right: 15px;
+}
+
 .header nav {
-	float: right;
 	font-size: 100%;
 }
 
@@ -49,4 +59,9 @@
 .header nav a.active {
 	background: rgba(0,0,0,0.3);
 	border-bottom: 3px solid rgba(87, 221, 87, 0.747);
+}
+
+.dropdown {
+	background-color: white;
+	border: 1px solid black;
 }
