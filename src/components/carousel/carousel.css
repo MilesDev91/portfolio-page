@@ -1,45 +1,15 @@
 .carousel {
-    min-height: 250px;
+    max-height: 100vh;
+    position: relative;
     margin: 0;
     padding: 0;
     display: flex;
+    z-index: 0;
+    overflow: hidden;
 }
 
-.carousel1 {
-    background-image: url('../../assets/image/Initial.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.carousel2 {
-    background-image: url('../../assets/image/Second.jpeg');
-}
-
-.carousel button {
-    background-color: transparent;
-    border: none;
-    color: white;
-}
-
-.buttonanimation {
-    animation: buttonanimation 1s ease-out forwards;
-}
-
-.carousel button:focus {
-    outline: none;
-}
-
-@keyframes buttonanimation {
-    50% {
-        transform-origin: center;
-        transform: translateX(-5%);
-        color: rgba(255, 180, 40, 0.7);
-    }
-
-    100% {
-        transform: translateX(0);
-        color: white;
-    }
+.carousel img {
+    width: 100vw;
 }
 
 .carousel p {
@@ -57,21 +27,90 @@
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     flex-grow: 1;
+    z-index: 10;
 }
 
-@media (min-width: 600px) {
+.carousel button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+}
+
+.buttonAnimationLeft {
+    animation: left-button-animation .5s ease-out forwards;
+}
+
+.buttonAnimationRight {
+    animation: right-button-animation .5s ease-out forwards;
+}
+
+.carousel button:focus {
+    outline: none;
+}
+
+@keyframes left-button-animation {
+    50% {
+        transform: translateX(-5%);
+        color: rgba(255, 180, 40, 0.7);
+    }
+
+    100% {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@keyframes right-button-animation {
+    50% {
+        transform: translateX(5%);
+        color: rgba(255, 180, 40, 0.7);
+    }
+
+    100% {
+        transform: translateX(0);
+        color: white;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* -----------------Beginning of Carousel Animations------------------ */
+/* ------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------- */
+/* -----------------End of Carousel Animations------------------ */
+/* ------------------------------------------------------------------- */
+
+
+
+@media (max-width: 600px) {
+    .carousel {
+        min-height: 250px;
+    }
+
     .carousel1 {
-        background-size: cover;
-        min-height: 700px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .carousel2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .carousel3 {
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
