@@ -1,11 +1,11 @@
 .carousel {
-    max-height: 100vh;
+    max-height: 95vh;
     position: relative;
     margin: 0;
     padding: 0;
     display: flex;
     z-index: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .carousel img {
@@ -24,6 +24,12 @@
     align-items: center;
     color: white;
     padding: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
 }
 
 .overlay {
@@ -34,59 +40,50 @@
     align-items: center;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
+    width: 300vw;
     flex-grow: 1;
     z-index: 10;
 }
 
-.carousel button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    z-index: 100;
+.carousel1to2 {
+    animation: c1to2 .5s ease-out forwards;
 }
 
-.buttonAnimationLeft {
-    animation: left-button-animation .5s ease-out forwards;
+.carousel2to3 {
+
 }
 
-.buttonAnimationRight {
-    animation: right-button-animation .5s ease-out forwards;
+.carousel3to1 {
+
+}
+
+.carousel1to3 {
+
+}
+
+.carousel3to2 {
+
+}
+
+.carousel2to1 {
+
 }
 
 .carousel button:focus {
     outline: none;
 }
 
-@keyframes left-button-animation {
-    50% {
-        transform: translateX(-5%);
-        color: rgba(255, 180, 40, 0.7);
-    }
 
-    100% {
-        transform: translateX(0);
-        color: white;
-    }
-}
-
-@keyframes right-button-animation {
-    50% {
-        transform: translateX(5%);
-        color: rgba(255, 180, 40, 0.7);
-    }
-
-    100% {
-        transform: translateX(0);
-        color: white;
-    }
-}
 /* ------------------------------------------------------------------- */
 /* -----------------Beginning of Carousel Animations------------------ */
 /* ------------------------------------------------------------------- */
 
-
+@keyframes c1to2 {
+    100% {
+        transform: translateX(-100vw);
+    }
+}
 
 /* ------------------------------------------------------------------- */
 /* -----------------End of Carousel Animations------------------ */
