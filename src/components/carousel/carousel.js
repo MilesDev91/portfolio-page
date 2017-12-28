@@ -30,26 +30,27 @@ class Carousel extends Component {
         super(props);
 
         this.state = {
-            position: 1,
-            imageClass: [classes.carousel]
+            position: 1
         }
 
-
+        this.imageClass = [classes.carousel];
+        this.pClass = null;
         this.animationTiming = this.props.animationTiming;
-        this.imageAnimation = null;
     }
 
 
 
-    // componentDidUpdate () {
-    //     this.state.leftButtonClass;
-    //     this.state.rightButtonClass;
-    //     this.state.imageClass = [classes.carousel];
-    // }
+    componentDidUpdate () {
+        this.imageClass = [classes.carousel];
+        this.pClass = null;
+    }
 
+    /**
+     * @description Fed into carousel buttons. Determines from which image the animation starts and to which it ends.
+     * @param {string} direction Either "left" or "right". "right" can be anything because it is the else condition.
+     */
     positionChangedHandler = (direction) => {
         let oldPosition = this.state.position;
-        console.log(this.props.images.length);
         let maxPosition = this.props.images.length;
         if (direction === "left") {
             if (oldPosition === 1) {
@@ -69,54 +70,56 @@ class Carousel extends Component {
                 this.imageAnimationHandler(oldPosition, oldPosition + 1);
             }
         }
-        console.log(this.state.position);
     }
 
+    /**
+     * @description Simply takes the old position and new position from
+     * positionChangedHandler and pushes a reference to the proper animation
+     * class onto the imageClass state property.
+     * @param {number} oldP The current(old) state position.
+     * @param {number} newP The new position.
+     */
     imageAnimationHandler = (oldP, newP) => {
-        let imgClass = this.state.imageClass;
-        imgClass.push(eval("animRef.c" + oldP + "to" + newP + ""));
-        this.setState({ imageClass: imgClass });
-    }
-
-    timeoutHandler = (change) => {
-        setTimeout(() => {
-            change;
-            this.btnAnimTrigger = false;
-        }, this.animationTiming);
+        this.imageClass.push(eval("animRef.c" + oldP + "to" + newP + ""));
     }
 
     render () {
+
+
+        let cText;
+
+        switch (this.state.position) {
+            case 1:
+                this.pClass = classes.carouselp1;
+                cText = <p class={this.pClass}>This is slide one</p>;
+                break;
+            case 2:
+                this.pClass = classes.carouselp2;
+                cText = <p class={this.pClass}>This is slide two</p>;
+                break;
+            case 3:
+                this.pClass = classes.carouselp3;
+                cText = <p class={this.pClass}>This is slide three</p>;
+        }
 
         const images = this.props.images.map((image, index) => {
             return <img src={image} key={index} />;
         });
 
-
-        //let carouselImage = [classes.carousel];
-        // switch (this.state.position) {
-        //     case 1:
-        //         carouselImage.push(classes.carousel1);
-        //         break;
-        //     case 2:
-        //         carouselImage.push(classes.carousel1to2);
-        //         break;
-        //     default:
-        //         return nusll;
-        //}
         return (
             <div class={classes.carousel}>
-                <div class={this.state.imageClass.join(' ')}>
+                <div class={this.imageClass.join(' ')}>
                     {images}
                 </div >
                 <div class={classes.overlay}>
 
                 </div>
                 <div class={classes.middle}>
-                    <CarouselButton animationTiming={this.animationTiming} positionChange={this.positionChangedHandler} class={this.state.leftButtonClass} direction="left">
+                    <CarouselButton animationTiming={this.animationTiming} positionChange={this.positionChangedHandler} direction="left">
                         <Icon name="angle-left" size="3x" />
                     </CarouselButton>
-                    <p>Hi I am a carousel</p>
-                    <CarouselButton animationTiming={this.animationTiming} positionChange={this.positionChangedHandler} class={this.state.rightButtonClass} direction="right" >
+                    {cText}
+                    <CarouselButton animationTiming={this.animationTiming} positionChange={this.positionChangedHandler} direction="right" >
                         <Icon name="angle-right" size="3x" />
                     </CarouselButton>
                 </div >
