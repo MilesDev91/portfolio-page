@@ -12,8 +12,21 @@ export default class Home extends Component {
 				<div>
 					<Carousel images={imgArray} animationTiming={500} />
 				</div>
-				<div class={style.intro}>
-					<p>Hello, I am a junior web developer who is quickly gaining practical experience in the field.</p>
+				<div class={style.information}>
+					<div class={style.intro}>
+						<div class={style.text}>
+							<h1>About Me</h1>
+							<p>Hello, I am a junior web developer who is quickly gaining practical experience in the field.</p>
+						</div>
+						<div class={style.block}></div>
+					</div>
+					<div class={style.services}>
+						<div class={style.block}></div>
+						<div class={style.text}>
+							<h1>Services</h1>
+							<p>These are some of the various skills and services that I have to offer.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		);

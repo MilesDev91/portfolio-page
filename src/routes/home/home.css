@@ -1,6 +1,43 @@
 .home {
-	padding: 56px 0px;
+	padding-top: 56px;
 	width: 100%;
 	background-color: white;
 	overflow-x: hidden;
+}
+
+.information {
+	border-top: 5px solid rgba(0,0,0,0.3);
+	border-bottom: 5px solid rgba(0,0,0,0.3);
+	background: linear-gradient(rgb(252, 188, 69), rgb(204, 147, 42));
+} 
+
+.intro {
+	border-bottom: 5px solid rgba(0,0,0,0.3);
+	border-left: 5px solid rgba(0,0,0,0.3);
+	display: flex;
+}
+
+.text {
+	width: 66%;
+	padding: 0 15px;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.text p {
+	font-size: 1.2em;
+}
+
+.block {
+	width: 33%;
+	border-right: 5px solid rgba(0,0,0,0.3);
+	border-left: 5px solid rgba(0,0,0,0.3);
+	flex-grow: 1;
+	background: linear-gradient(rgb(252, 188, 69), rgb(236, 170, 46));
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	border-right: 5px solid rgba(0,0,0,0.3);
 }
