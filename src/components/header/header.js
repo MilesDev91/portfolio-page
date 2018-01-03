@@ -7,7 +7,7 @@ import Aux from '../../hoc/Auxilliary';
 
 const options = [
 	<Link activeClassName={style.active} href="/">Home</Link>,
-	<Link activeClassName={style.active} href="/profile">Portfolio</Link>,
+	<Link activeClassName={style.active} href="/portfolio">Portfolio</Link>,
 	<Link activeClassName={style.active} href="/profile/john">Contact</Link>
 ]
 
@@ -33,7 +33,7 @@ export default class Header extends Component {
 			headerStyle = (
 				<nav>
 					<Link activeClassName={style.active} href="/">Home</Link>
-					<Link activeClassName={style.active} href="/profile">Portfolio</Link>
+					<Link activeClassName={style.active} href="/portfolio">Portfolio</Link>
 					<Link activeClassName={style.active} href="/profile/john">Contact</Link>
 				</nav>
 			);
