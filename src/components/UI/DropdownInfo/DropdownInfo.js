@@ -1,21 +1,39 @@
-import { h } from 'preact';
+import { h, Component } from 'preact';
 import classes from './DropdownInfo.css';
+import { Icon } from 'react-fa';
 
-const dropdownInfo = (props) => {
-    let dropdownContent;
-    if (props.show) {
-        dropdownContent = <div>{props.content}</div>;
+class DropdownInfo extends Component {
+    state = {
+        show: false
     }
 
-    return (
-        <div class={props.class}>
-            <h2>{props.title}</h2>
-            {dropdownContent}
-        </div>
-    );
+    showHandler = () => {
+        this.setState({ show: !this.state.show });
+        console.log(this.state.show);
+    }
+
+    render () {
+
+        let dropdownContent;
+
+        let buttonIcon = <Icon onClick={this.showHandler} name="angle-right" />;
+
+        if (this.state.show) {
+            dropdownContent = <p>{this.props.content}</p>;
+            buttonIcon = <Icon onClick={this.showHandler} name="angle-down" />;
+        }
+        return (
+            <div class={classes.dropdownInfo} >
+                <h2>{this.props.title} {buttonIcon}</h2>
+                {dropdownContent}
+            </div>
+        );
+    }
+
+
 }
 
-export default dropdownInfo;
+export default DropdownInfo;
 
 /**
  * planned props

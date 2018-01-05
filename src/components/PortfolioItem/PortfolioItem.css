@@ -1,9 +1,11 @@
 .portfolioItem {
     display: inline-block;
+    width: 405px;
+    margin: 2% 3%;
 }
 
 .thumbnail  {
-    margin: 24px 54px;
+    margin: 24px 0;
 }
 
 .thumbnail img {

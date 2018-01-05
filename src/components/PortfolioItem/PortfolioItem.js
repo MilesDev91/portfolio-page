@@ -5,8 +5,8 @@ import DropdownInfo from '../UI/DropdownInfo/DropdownInfo';
 
 const portfolioItem = (props) => (
     <div class={classes.portfolioItem}>
-        <Thumbnail class={classes.thumbnail} image={props.image} link="https://evening-gorge-71276.herokuapp.com/" />
-        <DropdownInfo title="Hello" content="This is some sample content" show={true} />
+        <Thumbnail width={props.imageWidth} height={props.imageHeight} class={classes.thumbnail} image={props.image} link={props.link} />
+        <DropdownInfo title={props.title} content={props.content} show={true} />
     </div>
 );
 

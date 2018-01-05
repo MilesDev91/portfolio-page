@@ -1,0 +1,21 @@
+.dropdownInfo {
+    color: black;
+    text-shadow: none;
+}
+
+.dropdownInfo h2 {
+    display: inline-block;
+    padding: 0;
+    margin-left: auto;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+}
+
+.dropdownInfo p {
+    background-color: rgb(240, 194, 110);
+    width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 10px 14px;
+    line-height: 1.2em;
+}

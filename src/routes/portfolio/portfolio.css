@@ -19,6 +19,20 @@
 	box-shadow: 1px 1px 4px rgb(61, 61, 61);
 }
 
+.portfolioItems {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.portfolioItems2 {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
 .thumbnail  {
     margin: 24px 54px;
 }
