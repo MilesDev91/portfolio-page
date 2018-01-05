@@ -1,7 +1,7 @@
 import { h } from 'preact';
-import classes from './Dropdown.css';
+import classes from './DropdownMenu.css';
 
-const dropdown = (props) => {
+const dropdownMenu = (props) => {
     let dropdown;
     if (props.show) {
         dropdown = props.options;
@@ -13,7 +13,7 @@ const dropdown = (props) => {
     );
 }
 
-export default dropdown;
+export default dropdownMenu;
 
 /*
 Options

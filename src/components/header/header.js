@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
 import { Icon } from 'react-fa';
 import style from './Header.css';
-import Dropdown from '../UI/Dropdown/Dropdown';
+import DropdownMenu from '../UI/DropdownMenu/DropdownMenu';
 import Aux from '../../hoc/Auxilliary';
 
 const options = [
@@ -24,7 +24,7 @@ export default class Header extends Component {
 	render () {
 		let headerStyle = (
 			<nav>
-				<Dropdown show={this.state.dropdownEnabled} options={options} />
+				<DropdownMenu show={this.state.dropdownEnabled} options={options} />
 				<button onClick={this.dropdownEnabledToggler}><Icon name="angle-down" size="2x" /></button>
 			</nav>
 		);
