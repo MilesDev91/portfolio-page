@@ -2,16 +2,33 @@ import { h, Component } from 'preact';
 import style from './home.css';
 
 import Carousel from '../../components/Carousel/Carousel.js';
+import withResizeHandler from '../../hoc/withResizeHandler';
 
 const imgArray = ["../../assets/image/Initial.jpeg", "../../assets/image/Second.png", "../../assets/image/Third.jpeg"]
+const imgText = ["Let your ideas become a reality.", "Build your site with the React framework for faster performance.", "Keep in touch through Github and daily emails."]
 
-export default class Home extends Component {
+class Home extends Component {
+
 	render () {
+		let images = imgArray.map((img, index) => {
+			return (
+				<div class={style.crop}>
+					<div class={style.overlay}></div>
+					<img class={style.smallImage} src={img} />
+					<div class={style.imgText}>
+						{imgText[index]}
+					</div>
+				</div>
+			);
+		});
+
+		if (window.matchMedia("(min-width: 600px)").matches) {
+			images = <div><Carousel images={imgArray} animationTiming={500} /></div>;
+		}
+
 		return (
 			<div class={style.home}>
-				<div>
-					<Carousel images={imgArray} animationTiming={500} />
-				</div>
+				{images}
 				<div class={style.information}>
 					<div class={style.intro}>
 						<div class={style.text}>
@@ -32,3 +49,5 @@ export default class Home extends Component {
 		);
 	}
 }
+
+export default withResizeHandler(Home);

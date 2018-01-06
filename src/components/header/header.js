@@ -4,6 +4,7 @@ import { Icon } from 'react-fa';
 import style from './Header.css';
 import DropdownMenu from '../UI/DropdownMenu/DropdownMenu';
 import Aux from '../../hoc/Auxilliary';
+import withResizeHandler from '../../hoc/withResizeHandler';
 
 const options = [
 	<Link activeClassName={style.active} href="/">Home</Link>,
@@ -11,14 +12,17 @@ const options = [
 	<Link activeClassName={style.active} href="/profile/john">Contact</Link>
 ]
 
-export default class Header extends Component {
+class Header extends Component {
 
 	state = {
-		dropdownEnabled: false
+		dropdownEnabled: false,
+		width: window.innerWidth,
+		height: window.innerHeight
 	}
 
 	dropdownEnabledToggler = () => {
 		this.setState({ dropdownEnabled: !this.state.dropdownEnabled });
+		console.log(this.state.dropdownEnabled);
 	}
 
 	render () {
@@ -48,4 +52,5 @@ export default class Header extends Component {
 		);
 	}
 }
-{/* {dropdown} */ } {/* {headerStyle} */ }
+
+export default withResizeHandler(Header);

@@ -19,3 +19,9 @@
     padding: 10px 14px;
     line-height: 1.2em;
 }
+
+/* @media (max-width: 599px) {
+    .dropdownInfo p {
+        max-width: 90%;
+    }
+} */

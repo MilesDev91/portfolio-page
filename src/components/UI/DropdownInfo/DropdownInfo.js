@@ -34,11 +34,3 @@ class DropdownInfo extends Component {
 }
 
 export default DropdownInfo;
-
-/**
- * planned props
- *      Title
- *      Show (boolean)
- *      Content
- *      class (additional styling)
- */

@@ -14,9 +14,3 @@ const dropdownMenu = (props) => {
 }
 
 export default dropdownMenu;
-
-/*
-Options
-Enabled/Disabled
-Requires an outside button to toggle state
-*/

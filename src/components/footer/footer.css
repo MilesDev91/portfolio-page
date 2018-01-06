@@ -37,3 +37,16 @@
     text-align: center;
     text-decoration: none;
 }
+
+@media (max-width: 599px) {
+    .footer p {
+        text-align: center;
+        width: 100%;
+        padding: 15px 15px;
+        font-size: 1em;
+        line-height: 1.6em;
+        margin: 0;
+        position: static;
+        transform: none;
+    }
+}

@@ -1,3 +1,19 @@
 .contact {
-    padding-top: 56px;
+    padding: 56px 40px;
+    background-color: rgb(228, 162, 40);
+    color: rgba(245, 245, 245, 0.959);
+    text-shadow: 1px 2px 2px rgb(61, 61, 61);
+}
+
+.info {
+    line-height: 1em;
+}
+
+.hours {
+    text-indent: 3.5em;
+}
+
+.contact p {
+    margin-left: 4em;
+    font-size: 1.3em;
 }
