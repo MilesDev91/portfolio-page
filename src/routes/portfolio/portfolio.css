@@ -11,11 +11,11 @@
 
 .portfolio h1 {
 	font-size: 2.5em;
+	display: inline-block;
 }
 
 .portfolio hr {
 	border-top: 2px solid white;
-	width: 20%;
 	box-shadow: 1px 1px 4px rgb(61, 61, 61);
 }
 
@@ -45,9 +45,5 @@
 @media (max-width: 599px) {
 	.portfolio {
 		padding: 56px 0;
-	}
-
-	.portfolio hr {
-		width: 80%;
 	}
 }

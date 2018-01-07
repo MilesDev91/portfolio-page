@@ -10,8 +10,7 @@ export default class Portfolio extends Component {
 	render () {
 		return (
 			<div class={style.portfolio}>
-				<h1><Icon name="folder-open" /> Portfolio</h1>
-				<hr></hr>
+				<h1><Icon name="folder-open" /> Portfolio <br /><hr></hr></h1>
 				<div class={style.portfolioItems}>
 					<PortfolioItem
 						imageWidth="400"

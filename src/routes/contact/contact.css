@@ -17,3 +17,9 @@
     margin-left: 4em;
     font-size: 1.3em;
 }
+
+@media (max-width: 599px) {
+    .contact p {
+        margin-left: 0;
+    }
+}
