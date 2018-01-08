@@ -17,13 +17,16 @@ const footer = (props) => {
         </div>
     );
 
-    if (window.matchMedia("(max-width: 599px)").matches) {
-        footerContent = (
-            <div class={classes.footer}>
-                <p> &copy; 2017 Miles Applications</p>
-            </div>
-        );
+    if (typeof window !== "undefined") {
+        if (window.matchMedia("(max-width: 599px)").matches) {
+            footerContent = (
+                <div class={classes.footer}>
+                    <p> &copy; 2017 Miles Applications</p>
+                </div>
+            );
+        }
     }
+
 
     return (
         <div>

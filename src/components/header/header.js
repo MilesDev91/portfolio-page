@@ -9,15 +9,13 @@ import withResizeHandler from '../../hoc/withResizeHandler';
 const options = [
 	<Link activeClassName={style.active} href="/">Home</Link>,
 	<Link activeClassName={style.active} href="/portfolio">Portfolio</Link>,
-	<Link activeClassName={style.active} href="/profile/john">Contact</Link>
+	<Link activeClassName={style.active} href="/contact">Contact</Link>
 ]
 
 class Header extends Component {
 
 	state = {
-		dropdownEnabled: false,
-		width: window.innerWidth,
-		height: window.innerHeight
+		dropdownEnabled: false
 	}
 
 	dropdownEnabledToggler = () => {
@@ -33,15 +31,18 @@ class Header extends Component {
 			</nav>
 		);
 
-		if (window.matchMedia("(min-width:600px)").matches) {
-			headerStyle = (
-				<nav>
-					<Link activeClassName={style.active} href="/">Home</Link>
-					<Link activeClassName={style.active} href="/portfolio">Portfolio</Link>
-					<Link activeClassName={style.active} href="/contact">Contact</Link>
-				</nav>
-			);
+		if (typeof window !== "undefined") {
+			if (window.matchMedia("(min-width:600px)").matches) {
+				headerStyle = (
+					<nav>
+						<Link activeClassName={style.active} href="/">Home</Link>
+						<Link activeClassName={style.active} href="/portfolio">Portfolio</Link>
+						<Link activeClassName={style.active} href="/contact">Contact</Link>
+					</nav>
+				);
+			}
 		}
+
 		return (
 
 			<header class={style.header}>

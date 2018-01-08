@@ -11,6 +11,11 @@ import Footer from './Footer/Footer';
 // import Profile from 'async!../routes/profile';
 
 export default class App extends Component {
+
+	constructor (props) {
+		super(props);
+		document.title = "Miles Applications";
+	}
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
 	 *	@param {string} event.url	The newly routed URL
@@ -19,7 +24,7 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
-	render () {
+	render () {	
 		return (
 			<div id="app">
 				<Header />

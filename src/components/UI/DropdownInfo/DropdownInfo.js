@@ -16,15 +16,15 @@ class DropdownInfo extends Component {
 
         let dropdownContent;
 
-        let buttonIcon = <Icon onClick={this.showHandler} name="angle-right" />;
+        let buttonIcon = <Icon name="angle-right" />;
 
         if (this.state.show) {
             dropdownContent = <p>{this.props.content}</p>;
-            buttonIcon = <Icon onClick={this.showHandler} name="angle-down" />;
+            buttonIcon = <Icon name="angle-down" />;
         }
         return (
             <div class={classes.dropdownInfo} >
-                <h2>{this.props.title} {buttonIcon}</h2>
+                <h2 onClick={this.showHandler}>{this.props.title} {buttonIcon}</h2>
                 {dropdownContent}
             </div>
         );

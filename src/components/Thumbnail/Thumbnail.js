@@ -7,7 +7,7 @@ const thumbnail = (props) => {
 
     return (
         <div class={style}>
-            <a href={props.link}><img width={props.width} height={props.height} src={props.image} /></a>
+            <a href={props.link} target="_blank"><img width={props.width} height={props.height} src={props.image} /></a>
         </div>
     )
 

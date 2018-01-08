@@ -22,10 +22,12 @@ class Home extends Component {
 			);
 		});
 
-		if (window.matchMedia("(min-width: 600px)").matches) {
-			images = <div><Carousel images={imgArray} animationTiming={500} /></div>;
+		if (typeof window !== "undefined") {
+			if (window.matchMedia("(min-width: 600px)").matches) {
+				images = <div><Carousel images={imgArray} animationTiming={500} /></div>;
+			}
 		}
-
+		
 		return (
 			<div class={style.home}>
 				{images}
