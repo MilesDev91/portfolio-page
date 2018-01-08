@@ -12,9 +12,9 @@ import Footer from './Footer/Footer';
 
 export default class App extends Component {
 
-	constructor (props) {
+	constructor(props) {
 		super(props);
-		document.title = "Miles Applications";
+		if (typeof window !== "undefined") { document.title = "Miles Applications"; }
 	}
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
@@ -24,7 +24,7 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
-	render () {	
+	render () {
 		return (
 			<div id="app">
 				<Header />

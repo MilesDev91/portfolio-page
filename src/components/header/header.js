@@ -20,7 +20,6 @@ class Header extends Component {
 
 	dropdownEnabledToggler = () => {
 		this.setState({ dropdownEnabled: !this.state.dropdownEnabled });
-		console.log(this.state.dropdownEnabled);
 	}
 
 	render () {

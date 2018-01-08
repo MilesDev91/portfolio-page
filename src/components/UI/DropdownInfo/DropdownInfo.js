@@ -9,7 +9,6 @@ class DropdownInfo extends Component {
 
     showHandler = () => {
         this.setState({ show: !this.state.show });
-        console.log(this.state.show);
     }
 
     render () {
