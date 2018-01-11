@@ -91,15 +91,15 @@ class Carousel extends Component {
         switch (this.state.position) {
             case 1:
                 this.pClass = classes.carouselp1;
-                cText = <p class={this.pClass}>Let your problems turn into solutions. Every site has its unique challenges, so make sure your site meets your expectations.</p>;
+                cText = <p class={this.pClass}>Every site has its unique challenges, and each can be overcome.</p>;
                 break;
             case 2:
                 this.pClass = classes.carouselp2;
-                cText = <p class={this.pClass}>Want a smooth user experience and build your site with the future in mind? The React framework is just for you.</p>;
+                cText = <p class={this.pClass}>React.js is a powerful library that transforms any website into a smooth experience.</p>;
                 break;
             case 3:
                 this.pClass = classes.carouselp3;
-                cText = <p class={this.pClass}>Keep in touch with github and daily emails to know what course your project is on every step of the way. Communication is the key to success from start to finish.</p>;
+                cText = <p class={this.pClass}>Github and project management tools keep everyone on the right track. Communication is the key to success from start to finish.</p>;
         }
 
         const images = this.props.images.map((image, index) => {

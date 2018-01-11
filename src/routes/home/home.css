@@ -5,6 +5,11 @@
 	overflow-x: hidden;
 }
 
+.home a,a:visited,a:active {
+	text-decoration: none;
+	color: rgb(73, 73, 252);
+}
+
 .smallImage {
 	max-width: 100%;
 }
@@ -38,46 +43,29 @@
 }
 
 .information {
-	border-top: 5px solid rgba(0,0,0,0.3);
-	border-bottom: 5px solid rgba(0,0,0,0.3);
-	background: linear-gradient(rgb(252, 188, 69), rgb(204, 147, 42));
+	border-top: 5px solid rgb(204, 147, 42);
+	background: white;
+	line-height: 1.7em;
 } 
 
-.intro {
-	border-bottom: 5px solid rgba(0,0,0,0.3);
-	border-left: 5px solid rgba(0,0,0,0.3);
-	display: flex;
+.infoItem {
+	border-bottom: 5px solid rgb(204, 147, 42);
 }
 
-.text {
-	width: 66%;
-	padding: 0 15px;
-	flex-grow: 1;
-	background-color: rgba(255, 255, 255, 0.9);
+.infoItem h1 {
+	text-align: center;
+}
+
+.infoItem p, li {
+	margin: 0 20% 10px 20%;
+	font-size: 20px;
 }
 
 .text p {
 	font-size: 1.2em;
 }
 
-.block {
-	width: 33%;
-	border-right: 5px solid rgba(0,0,0,0.3);
-	border-left: 5px solid rgba(0,0,0,0.3);
-	flex-grow: 1;
-	background: linear-gradient(rgb(252, 188, 69), rgb(236, 170, 46));
-}
-
-.services {
-	display: flex;
-	justify-content: space-between;
-	border-right: 5px solid rgba(0,0,0,0.3);
-}
-
 @media (max-width: 599px) {
-	.block {
-		display: none;
-	}
 
 	.intro,.services {
 		border-right: none;

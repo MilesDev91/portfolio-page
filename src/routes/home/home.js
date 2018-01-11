@@ -27,24 +27,28 @@ class Home extends Component {
 				images = <div><Carousel images={imgArray} animationTiming={500} /></div>;
 			}
 		}
-		
+
 		return (
 			<div class={style.home}>
 				{images}
 				<div class={style.information}>
-					<div class={style.intro}>
-						<div class={style.text}>
-							<h1>About Me</h1>
-							<p>Hello, I am a junior web developer who is quickly gaining practical experience in the field.</p>
-						</div>
-						<div class={style.block}></div>
+					<div class={style.infoItem}>
+						<h1>About Me</h1>
+						<p>Hello, I am a junior web developer who is quickly gaining practical experience with my own projects. I have always loved computers, and being a web developer makes that love even stronger. I am very resourceful when it comes to solving problems, and I don't give up easily. If I don't find a solution elsewhere, then I create one myself.</p>
 					</div>
-					<div class={style.services}>
-						<div class={style.block}></div>
-						<div class={style.text}>
-							<h1>Services</h1>
-							<p>These are some of the various skills and services that I have to offer.</p>
-						</div>
+					<div class={style.infoItem}>
+						<h1>Skills</h1>
+						<p>These are some of the various skills I have learned so far. Visit the <a href="/portfolio">portfolio page</a> to see how I used these skills in my projects.</p>
+						<ul>
+							<li><strong>HTML, CSS, and Javascript</strong></li>
+							<p>It may seem obvious, but having a strong understanding of the basics makes all the difference in the world. Everything I have learned is to make these three things more efficient. Everything relies on them. I can say I have become very familiar with HTML, CSS, and Javascript.</p>
+							<li><strong>React</strong></li>
+							<p>When I first learned to code with React, I was a bit bewildered. It was so different to everything else I learned up to that point. It was confusing. It was brilliant. JSX, a seemless mix of javascript and HTML, proved to be very powerful...and very efficient to write. Combine this with localizing rerendering to specific components on a page and you get an impressive library that promotes efficient code and websites alike.</p>
+							<li><strong>Node.js</strong></li>
+							<p>Node.js is a Javascript runtime that gets its strength by using a non-blocking I/O model, so events can run asynchronously. Node.js also takes advantage of an absolutely massive package system called node package manager(NPM). There are tons of open source libraries to use here, made by some of the smartest programmers in the industry.</p>
+							<li><strong>JQuery</strong></li>
+							<p>The jQuery library allows for easy dynamic modification of elements on your site. It also does so many things normal Javascript does with much less code, like calling to the server with Ajax.</p>
+						</ul>
 					</div>
 				</div>
 			</div>
