@@ -56,9 +56,16 @@
 	text-align: center;
 }
 
-.infoItem p, li {
+.infoItem p {
 	margin: 0 20% 10px 20%;
 	font-size: 20px;
+}
+
+.infoItem li {
+	list-style-type: none;
+	margin: 20px 20% 10px 20%;
+	font-size: 32px;
+	color: rgb(75, 173, 75);
 }
 
 .text p {
@@ -66,9 +73,16 @@
 }
 
 @media (max-width: 599px) {
+	
+	.infoItem p {
+		margin: 0 5% 10px 5%;
+	}
 
-	.intro,.services {
-		border-right: none;
-		border-left: none;
+	.infoItem li {
+		margin: 20px 5% 10px 5%;
+	}
+
+	.infoItem ul {
+		padding: 0;
 	}
 }

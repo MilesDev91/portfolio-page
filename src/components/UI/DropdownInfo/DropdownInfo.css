@@ -11,13 +11,18 @@
     border-bottom: 2px solid black;
 }
 
+.dropdownInfo h2:hover {
+    cursor: pointer;
+}
+
 .dropdownInfo p {
-    background-color: rgb(240, 194, 110);
+    background-color: rgb(243, 243, 243);
     width: 400px;
     margin: auto;
     text-align: left;
     padding: 10px 14px;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    border: 2px solid rgb(148, 97, 4);
 }
 
 @media (max-width: 599px) {

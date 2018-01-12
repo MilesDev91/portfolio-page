@@ -5,7 +5,7 @@ import Carousel from '../../components/Carousel/Carousel.js';
 import withResizeHandler from '../../hoc/withResizeHandler';
 
 const imgArray = ["../../assets/image/Initial.jpeg", "../../assets/image/Second.png", "../../assets/image/Third.jpeg"]
-const imgText = ["Let your ideas become a reality.", "Build your site with the React framework for faster performance.", "Keep in touch through Github and daily emails."]
+const imgText = ["Every site has its unique challenges, and each can be overcome.", "React.js transforms any website into a smooth experience.", "Success through communication."]
 
 class Home extends Component {
 
@@ -43,9 +43,9 @@ class Home extends Component {
 							<li><strong>HTML, CSS, and Javascript</strong></li>
 							<p>It may seem obvious, but having a strong understanding of the basics makes all the difference in the world. Everything I have learned is to make these three things more efficient. Everything relies on them. I can say I have become very familiar with HTML, CSS, and Javascript.</p>
 							<li><strong>React</strong></li>
-							<p>When I first learned to code with React, I was a bit bewildered. It was so different to everything else I learned up to that point. It was confusing. It was brilliant. JSX, a seemless mix of javascript and HTML, proved to be very powerful...and very efficient to write. Combine this with localizing rerendering to specific components on a page and you get an impressive library that promotes efficient code and websites alike.</p>
+							<p>React is an awesome library/framework. Knowing how to leverage components to limit rendering on the page can make the user experience seem instantaneous. Combining HTML with Javascript via JSX is also very useful. This is probably my favorite tool to make sites with so far.</p>
 							<li><strong>Node.js</strong></li>
-							<p>Node.js is a Javascript runtime that gets its strength by using a non-blocking I/O model, so events can run asynchronously. Node.js also takes advantage of an absolutely massive package system called node package manager(NPM). There are tons of open source libraries to use here, made by some of the smartest programmers in the industry.</p>
+							<p>Node.js is a Javascript runtime that gets its strength by using a non-blocking I/O model, so events can run asynchronously. Node.js also takes advantage of a massive package system called node package manager(NPM). There are tons of open source libraries to use here, made by some of the smartest programmers in the industry.</p>
 							<li><strong>JQuery</strong></li>
 							<p>The jQuery library allows for easy dynamic modification of elements on your site. It also does so many things normal Javascript does with much less code, like calling to the server with Ajax.</p>
 						</ul>

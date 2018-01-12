@@ -18,16 +18,16 @@ export default class Portfolio extends Component {
 						image="../../assets/image/StoryBooks.png"
 						link="https://evening-gorge-71276.herokuapp.com/"
 						title="StoryBooks"
-						content="This is some sample content for the StoryBooks app. There is a man on the roof and his name is Bob."
+						content="StoryBooks is an app for writing and sharing stories that I made following a Node.js/Express/MongoDB course by Brad Traversy. It uses Express with handlebars for its framework, MongoDB via mongoose as its database, and Google oAuth as its authentification. Building this app taught me a lot about handling google authentification with express."
 					/>
 
 					<PortfolioItem
 						imageWidth="400"
 						imageHeight="300"
 						image="../../assets/image/SharePosts.png"
-						link="http://miles-applications.com/SharePosts/posts"
+						link="http://miles-applications.com/SharePosts/"
 						title="SharePosts"
-						content="This is some sample content for the SharePosts app. There is a man on the roof and his name is Bob."
+						content="SharePosts is a simple social board app that I made during a PHP(OOP & MVC) course by Brad Traversy. It uses a custom MVC framework, a mySQL database, and uses a session based authentification system. This app taught me about the php language, htaccess, session variables, and how to use a MVC framework."
 					/>
 				</div>
 				<div class={style.portfolioItems2}>
@@ -37,7 +37,7 @@ export default class Portfolio extends Component {
 						image="../../assets/image/Vidjot.png"
 						link="https://mighty-brushlands-33077.herokuapp.com/"
 						title="Vidjot"
-						content="This is some sample content for the Vidjot app. There is a man on the roof and his name is Bob."
+						content="Vidjot is an app for writing down quick video ideas. I made it following a Node.js/Express/MongoDB course by Brad Traversy. It uses Express with handlebars for its framework, MongoDB via mongoose as its database, and passport as its authentification. This app introduced me to the express framework and taught me about building authentication strategies."
 					/>
 
 					<PortfolioItem
@@ -46,7 +46,7 @@ export default class Portfolio extends Component {
 						image="../../assets/image/BurgerBuilder.png"
 						link="https://myburger-31b48.firebaseapp.com/"
 						title="Burger Builder"
-						content="This is some sample content for the Burger Builder app. There is a man on the roof and his name is Bob."
+						content="Burger Builder is a burger building app that lets you login, build a burger, and order it. I made it following a React 16 course by Maximillian Schwarzmüller. This application uses the react framework, a firebase database, and firebase authentification. It introduced me to the React framework (and very well, it was a great course) and a few of its tools, such as redux and axios. I learned everything from lifecyle hooks to redux state management, and I liked it so much I used react to build www.miles-applications.com."
 					/>
 				</div>
 

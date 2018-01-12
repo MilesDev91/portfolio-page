@@ -4,7 +4,7 @@ import { Icon } from 'react-fa';
 
 class DropdownInfo extends Component {
     state = {
-        show: false
+        show: this.props.show
     }
 
     showHandler = () => {

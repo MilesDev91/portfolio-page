@@ -6,7 +6,7 @@ import DropdownInfo from '../UI/DropdownInfo/DropdownInfo';
 const portfolioItem = (props) => (
     <div class={classes.portfolioItem}>
         <Thumbnail width={props.imageWidth} height={props.imageHeight} class={classes.thumbnail} image={props.image} link={props.link} />
-        <DropdownInfo title={props.title} content={props.content} show={true} />
+        <DropdownInfo title={props.title} content={props.content} show={false} />
     </div>
 );
 
