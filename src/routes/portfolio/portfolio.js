@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
 						imageWidth="400"
 						imageHeight="300"
 						image="../../assets/image/StoryBooks.png"
-						link="https://evening-gorge-71276.herokuapp.com/"
+						link="https://storybooks1.herokuapp.com/"
 						title="StoryBooks"
 						content="StoryBooks is an app for writing and sharing stories that I made following a Node.js/Express/MongoDB course by Brad Traversy. It uses Express with handlebars for its framework, MongoDB via mongoose as its database, and Google oAuth as its authentification. Building this app taught me a lot about handling google authentification with express."
 					/>
@@ -35,7 +35,7 @@ export default class Portfolio extends Component {
 						imageWidth="400"
 						imageHeight="300"
 						image="../../assets/image/Vidjot.png"
-						link="https://mighty-brushlands-33077.herokuapp.com/"
+						link="https://vidjot2.herokuapp.com/"
 						title="Vidjot"
 						content="Vidjot is an app for writing down quick video ideas. I made it following a Node.js/Express/MongoDB course by Brad Traversy. It uses Express with handlebars for its framework, MongoDB via mongoose as its database, and passport as its authentification. This app introduced me to the express framework and taught me about building authentication strategies."
 					/>

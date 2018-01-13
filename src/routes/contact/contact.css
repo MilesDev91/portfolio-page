@@ -19,7 +19,13 @@
 }
 
 @media (max-width: 599px) {
+
+    .contact h2 {
+        font-size: 1.3em;
+    }
+
     .contact p {
         margin-left: 0;
+        font-size: .8em;
     }
 }

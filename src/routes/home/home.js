@@ -38,7 +38,7 @@ class Home extends Component {
 					</div>
 					<div class={style.infoItem}>
 						<h1>Skills</h1>
-						<p>These are some of the various skills I have learned so far. Visit the <a href="/portfolio">portfolio page</a> to see how I used these skills in my projects.</p>
+						<p>These are some of the various skills I have learned so far. Visit the <a href="/portfolio">portfolio page</a> to see how I used these skills in my projects. I am currently working on more original projects to better showcase my knowlege of these.</p>
 						<ul>
 							<li><strong>HTML, CSS, and Javascript</strong></li>
 							<p>It may seem obvious, but having a strong understanding of the basics makes all the difference in the world. Everything I have learned is to make these three things more efficient. Everything relies on them. I can say I have become very familiar with HTML, CSS, and Javascript.</p>
