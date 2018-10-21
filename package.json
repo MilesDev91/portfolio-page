@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "if-env NODE_ENV='production' && npm run -s serve || npm run -s dev",
+    "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
@@ -30,6 +30,7 @@
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
     "react-fa": "^5.0.0",
+    "react-scripts": "^2.0.5",
     "react-transition-group": "^2.2.1"
   }
 }
