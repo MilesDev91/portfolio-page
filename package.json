@@ -21,12 +21,12 @@
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
-    "preact": "^8.3.1",
     "preact-cli": "^2.0.1",
     "react-styleguidist": "^6.1.0"
   },
   "dependencies": {
     "if-env": "^1.0.4",
+    "preact": "^8.3.1",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
     "react-fa": "^5.0.0",
