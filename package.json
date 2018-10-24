@@ -2,6 +2,9 @@
   "private": true,
   "name": "portfolio-page",
   "version": "0.0.0",
+  "engines": {
+    "node": "9.0.0"
+  },
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
