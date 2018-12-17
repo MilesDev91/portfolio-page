@@ -9,7 +9,7 @@
   "scripts": {
     "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
     "build": "preact build",
-    "serve": "preact build && preact serve",
+    "serve": "serve build -s",
     "dev": "preact watch",
     "lint": "eslint src",
     "styleguide": "styleguidist server",
@@ -35,6 +35,7 @@
     "react-fa": "^5.0.0",
     "react-scripts": "^2.0.5",
     "react-transition-group": "^2.2.1",
+    "serve": "^10.1.1",
     "simplehttp2server": "^2.0.0"
   }
 }
