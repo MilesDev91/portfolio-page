@@ -10,7 +10,7 @@
   "scripts": {
     "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
     "build": "preact build",
-    "serve": "serve && preact build",
+    "serve": "preact serve && preact build",
     "dev": "preact watch",
     "lint": "eslint src",
     "styleguide": "styleguidist server",
@@ -26,8 +26,7 @@
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "preact-cli": "^2.0.1",
-    "react-styleguidist": "^6.1.0",
-    "serve": "^10.1.1"
+    "react-styleguidist": "^6.1.0"
   },
   "dependencies": {
     "if-env": "^1.0.4",
