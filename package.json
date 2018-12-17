@@ -9,7 +9,7 @@
   "scripts": {
     "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
     "build": "preact build",
-    "serve": "serve build -s",
+    "serve": "serve && build",
     "dev": "preact watch",
     "lint": "eslint src",
     "styleguide": "styleguidist server",
