@@ -3,13 +3,14 @@
   "name": "portfolio-page",
   "version": "0.0.0",
   "engines": {
-    "node": "9.0.0"
+    "node": "9.0.0",
+    "npm": "5.5.1"
   },
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV='production' && npm run serve || npm run dev",
     "build": "preact build",
-    "serve": "serve && build",
+    "serve": "serve && preact build",
     "dev": "preact watch",
     "lint": "eslint src",
     "styleguide": "styleguidist server",
