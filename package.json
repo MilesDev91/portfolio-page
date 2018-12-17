@@ -25,7 +25,8 @@
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "preact-cli": "^2.0.1",
-    "react-styleguidist": "^6.1.0"
+    "react-styleguidist": "^6.1.0",
+    "serve": "^10.1.1"
   },
   "dependencies": {
     "if-env": "^1.0.4",
@@ -35,7 +36,6 @@
     "react-fa": "^5.0.0",
     "react-scripts": "^2.0.5",
     "react-transition-group": "^2.2.1",
-    "serve": "^10.1.1",
     "simplehttp2server": "^2.0.0"
   }
 }
